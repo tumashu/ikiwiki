@@ -1,0 +1,1422 @@
+# Chinese translation of the ikiwiki language file resulting in zh_CN.po
+# Copyright (C) 2018 Feng Shu <tumashu@163.com>
+# This file is distributed under the same license as the PACKAGE package.
+# Feng Shu <tumashu@163.com>, 2018.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ikiwiki 3.14159\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-03-11 15:54+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Feng Shu <tumashu@163.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: ../IkiWiki/CGI.pm:217
+msgid ""
+"probable misconfiguration: sslcookie is set, but you are attempting to login "
+"via http, not https"
+msgstr "配置可能出现的错误：你虽然已经设置了 sslcookie，但还在使用 http 登录，而不是使用 https"
+
+#: ../IkiWiki/CGI.pm:220
+msgid ""
+"Login succeeded, but I don't remember why you were logging in, so you'll "
+"have to navigate back to whatever you were doing. (This should not normally "
+"happen. Perhaps you need to enable cookies?)"
+msgstr ""
+
+#: ../IkiWiki/CGI.pm:239 ../IkiWiki/CGI.pm:395
+msgid "Your login session has expired."
+msgstr "本次登录已经失效"
+
+#: ../IkiWiki/CGI.pm:260
+msgid "Login"
+msgstr "登录"
+
+#: ../IkiWiki/CGI.pm:261
+msgid "Preferences"
+msgstr "选项"
+
+#: ../IkiWiki/CGI.pm:262
+msgid "Admin"
+msgstr ""
+
+#: ../IkiWiki/CGI.pm:303
+msgid "Preferences saved."
+msgstr "选项已保存"
+
+#: ../IkiWiki/CGI.pm:358
+msgid "You are banned."
+msgstr "你被禁止登录了"
+
+#: ../IkiWiki/CGI.pm:491 ../IkiWiki/CGI.pm:492 ../IkiWiki.pm:1676
+msgid "Error"
+msgstr "错误"
+
+#: ../IkiWiki/Plugin/aggregate.pm:86
+msgid "Aggregation triggered via web."
+msgstr "从 web 页面触发页面聚合功能。"
+
+#: ../IkiWiki/Plugin/aggregate.pm:95
+msgid "Nothing to do right now, all feeds are up-to-date!"
+msgstr "所有的 feeds 都保持最新，不作任何操作！"
+
+#: ../IkiWiki/Plugin/aggregate.pm:227
+#, perl-format
+msgid "missing %s parameter"
+msgstr ""
+
+#: ../IkiWiki/Plugin/aggregate.pm:262
+msgid "new feed"
+msgstr "新 feed"
+
+#: ../IkiWiki/Plugin/aggregate.pm:276
+msgid "posts"
+msgstr ""
+
+#: ../IkiWiki/Plugin/aggregate.pm:278
+msgid "new"
+msgstr "新"
+
+#: ../IkiWiki/Plugin/aggregate.pm:465
+#, perl-format
+msgid "expiring %s (%s days old)"
+msgstr "已失效：%s (%s 天)"
+
+#: ../IkiWiki/Plugin/aggregate.pm:472
+#, perl-format
+msgid "expiring %s"
+msgstr "已失效：%s"
+
+#: ../IkiWiki/Plugin/aggregate.pm:500
+#, perl-format
+msgid "last checked %s"
+msgstr ""
+
+#: ../IkiWiki/Plugin/aggregate.pm:504
+#, perl-format
+msgid "checking feed %s ..."
+msgstr "正在检查 feed %s ..."
+
+#: ../IkiWiki/Plugin/aggregate.pm:509
+#, perl-format
+msgid "could not find feed at %s"
+msgstr "在 %s 处无法发现 feed"
+
+#: ../IkiWiki/Plugin/aggregate.pm:529
+msgid "feed not found"
+msgstr "没有发现 feed"
+
+#: ../IkiWiki/Plugin/aggregate.pm:540
+#, perl-format
+msgid "(invalid UTF-8 stripped from feed)"
+msgstr "(从 feed 发现无效的 UTF-8 字符)"
+
+#: ../IkiWiki/Plugin/aggregate.pm:548
+#, perl-format
+msgid "(feed entities escaped)"
+msgstr ""
+
+#: ../IkiWiki/Plugin/aggregate.pm:558
+msgid "feed crashed XML::Feed!"
+msgstr "feed 崩溃 XML:Feed!"
+
+#: ../IkiWiki/Plugin/aggregate.pm:654
+#, perl-format
+msgid "creating new page %s"
+msgstr "创建新页面：%S"
+
+#: ../IkiWiki/Plugin/aggregate.pm:684 ../IkiWiki/Plugin/edittemplate.pm:137
+msgid "failed to process template:"
+msgstr "无法处理模板："
+
+#: ../IkiWiki/Plugin/amazon_s3.pm:31
+msgid "deleting bucket.."
+msgstr "正在删除 bucket 。。"
+
+#: ../IkiWiki/Plugin/amazon_s3.pm:38 ../ikiwiki.in:226
+msgid "done"
+msgstr "完成"
+
+#: ../IkiWiki/Plugin/amazon_s3.pm:97
+#, perl-format
+msgid "Must specify %s"
+msgstr "必须指定 %s"
+
+#: ../IkiWiki/Plugin/amazon_s3.pm:140
+msgid "Failed to create S3 bucket: "
+msgstr "无法创建 S3 bucket:"
+
+#: ../IkiWiki/Plugin/amazon_s3.pm:225
+msgid "Failed to save file to S3: "
+msgstr "无法保存文件到 S3:"
+
+#: ../IkiWiki/Plugin/amazon_s3.pm:248
+msgid "Failed to delete file from S3: "
+msgstr "无法从 S3 中删除文件："
+
+#: ../IkiWiki/Plugin/attachment.pm:52
+#, perl-format
+msgid "there is already a page named %s"
+msgstr "已经存在页面：%S"
+
+#: ../IkiWiki/Plugin/attachment.pm:68
+msgid "prohibited by allowed_attachments"
+msgstr "被 allowed_attachments 选项禁用"
+
+#: ../IkiWiki/Plugin/attachment.pm:235
+msgid "bad attachment filename"
+msgstr "附件名不合法"
+
+#: ../IkiWiki/Plugin/attachment.pm:308
+msgid "attachment upload"
+msgstr "上传附件"
+
+#: ../IkiWiki/Plugin/attachment.pm:359
+msgid "this attachment is not yet saved"
+msgstr "这个附件还没有保存"
+
+#: ../IkiWiki/Plugin/attachment.pm:377
+msgid "just uploaded"
+msgstr "上传成功"
+
+#: ../IkiWiki/Plugin/autoindex.pm:43
+#, perl-format
+msgid "creating index page %s"
+msgstr "创建索引页面 %s"
+
+#: ../IkiWiki/Plugin/blogspam.pm:139
+msgid ""
+"Sorry, but that looks like spam to <a href=\"http://blogspam.net/"
+"\">blogspam</a>: "
+msgstr "抱歉，但这个看起来像垃圾信息(参考 <a href=\"http://blogspam.net/"
+"\">blogspam</a>): "
+
+#: ../IkiWiki/Plugin/brokenlinks.pm:38
+#, perl-format
+msgid "%s from %s"
+msgstr "%s 指向 %s"
+
+#: ../IkiWiki/Plugin/brokenlinks.pm:46
+msgid "There are no broken links!"
+msgstr "没有发现无效链接！"
+
+#: ../IkiWiki/Plugin/calendar.pm:115 ../IkiWiki/Plugin/calendar.pm:117
+#, perl-format
+msgid "building calendar for %s, its previous or next year has changed"
+msgstr "正在为 %s 创建日历，上一年和下一年的数据已经发生改变"
+
+#: ../IkiWiki/Plugin/calendar.pm:120 ../IkiWiki/Plugin/calendar.pm:122
+#, perl-format
+msgid "building calendar for %s/%s, its previous or next month has changed"
+msgstr "正在为 %s/%s 创建日历， 上一月和下一月的数据已经发生改变"
+
+#: ../IkiWiki/Plugin/calendar.pm:131
+#, perl-format
+msgid "creating calendar page %s"
+msgstr "正在创建日历页面 %s"
+
+#: ../IkiWiki/Plugin/comments.pm:128
+#, perl-format
+msgid "this comment needs %s"
+msgstr "这条评论需要 %s"
+
+#: ../IkiWiki/Plugin/comments.pm:131
+msgid "moderation"
+msgstr "审核"
+
+#: ../IkiWiki/Plugin/comments.pm:158 ../IkiWiki/Plugin/format.pm:50
+#, perl-format
+msgid "unsupported page format %s"
+msgstr "不支持的页面格式： %s"
+
+#: ../IkiWiki/Plugin/comments.pm:163
+msgid "comment must have content"
+msgstr "评论必须有内容"
+
+#: ../IkiWiki/Plugin/comments.pm:227
+msgid "Anonymous"
+msgstr "匿名"
+
+#: ../IkiWiki/Plugin/comments.pm:285
+msgid "Comment Moderation"
+msgstr "评论"
+
+#: ../IkiWiki/Plugin/comments.pm:382 ../IkiWiki/Plugin/comments.pm:386
+msgid "email replies to me"
+msgstr "邮件回复我"
+
+#: ../IkiWiki/Plugin/comments.pm:420 ../IkiWiki/Plugin/editpage.pm:96
+#: ../IkiWiki/Plugin/editpage.pm:102
+msgid "bad page name"
+msgstr "非法的页面名称"
+
+#: ../IkiWiki/Plugin/comments.pm:423
+#, perl-format
+msgid "commenting on %s"
+msgstr "正在对 %s 作评论"
+
+#: ../IkiWiki/Plugin/comments.pm:440
+#, perl-format
+msgid "page '%s' doesn't exist, so you can't comment"
+msgstr "页面 '%s' 不存在，无法评论"
+
+#: ../IkiWiki/Plugin/comments.pm:450
+#, perl-format
+msgid "comments on page '%s' are not allowed"
+msgstr "不允许对 '%s' 作评论"
+
+#: ../IkiWiki/Plugin/comments.pm:457
+#, perl-format
+msgid "comments on page '%s' are closed"
+msgstr "页面 '%s' 的评论已关闭"
+
+#: ../IkiWiki/Plugin/comments.pm:585
+msgid "comment stored for moderation"
+msgstr "评论保存，等待审核"
+
+#: ../IkiWiki/Plugin/comments.pm:587
+msgid "Your comment will be posted after moderator review"
+msgstr "你的评论需要审核之后才能发布"
+
+#: ../IkiWiki/Plugin/comments.pm:600
+msgid "Added a comment"
+msgstr "添加评论"
+
+#: ../IkiWiki/Plugin/comments.pm:604
+#, perl-format
+msgid "Added a comment: %s"
+msgstr "添加评论：%s"
+
+#: ../IkiWiki/Plugin/comments.pm:678 ../IkiWiki/Plugin/userlist.pm:55
+#: ../IkiWiki/Plugin/websetup.pm:272
+msgid "you are not logged in as an admin"
+msgstr "你需要以管理员的身份登录"
+
+#: ../IkiWiki/Plugin/comments.pm:737
+msgid "Comment moderation"
+msgstr "评论审核"
+
+#: ../IkiWiki/Plugin/comments.pm:778
+msgid "comment moderation"
+msgstr "评论审核"
+
+#: ../IkiWiki/Plugin/comments.pm:943
+#, perl-format
+msgid "%i comment"
+msgid_plural "%i comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: Here "Comment" is a verb;
+#. translators: the user clicks on it to
+#. translators: post a comment.
+#: ../IkiWiki/Plugin/comments.pm:953
+msgid "Comment"
+msgstr "评论"
+
+#: ../IkiWiki/Plugin/conditional.pm:27 ../IkiWiki/Plugin/cutpaste.pm:46
+#: ../IkiWiki/Plugin/cutpaste.pm:60 ../IkiWiki/Plugin/cutpaste.pm:75
+#: ../IkiWiki/Plugin/testpagespec.pm:26
+#, perl-format
+msgid "%s parameter is required"
+msgstr "%s 选项是必须的"
+
+#: ../IkiWiki/Plugin/cutpaste.pm:80
+msgid "no text was copied in this page"
+msgstr "没有从此页面拷贝文本"
+
+#: ../IkiWiki/Plugin/cutpaste.pm:83
+#, perl-format
+msgid "no text was copied in this page with id %s"
+msgstr "没有从 id 是 %s 的页面拷贝文本"
+
+#: ../IkiWiki/Plugin/editpage.pm:41
+#, perl-format
+msgid "removing old preview %s"
+msgstr "正在删除旧预览 %s"
+
+#: ../IkiWiki/Plugin/editpage.pm:118
+#, perl-format
+msgid "%s is not an editable page"
+msgstr "%s 不是一个可编辑页面"
+
+#: ../IkiWiki/Plugin/editpage.pm:166
+msgid "email comments to me"
+msgstr ""
+
+#: ../IkiWiki/Plugin/editpage.pm:320
+#, perl-format
+msgid "creating %s"
+msgstr "正在创建 %s"
+
+#: ../IkiWiki/Plugin/editpage.pm:338 ../IkiWiki/Plugin/editpage.pm:357
+#: ../IkiWiki/Plugin/editpage.pm:368 ../IkiWiki/Plugin/editpage.pm:415
+#: ../IkiWiki/Plugin/editpage.pm:457
+#, perl-format
+msgid "editing %s"
+msgstr "正在编辑： %s"
+
+#: ../IkiWiki/Plugin/edittemplate.pm:54
+msgid "template not specified"
+msgstr "template 没有设置"
+
+#: ../IkiWiki/Plugin/edittemplate.pm:57
+msgid "match not specified"
+msgstr "match 没有设置"
+
+#: ../IkiWiki/Plugin/edittemplate.pm:72
+#, perl-format
+msgid "edittemplate %s registered for %s"
+msgstr "edittemplate %s 已经为 %s 注册"
+
+#: ../IkiWiki/Plugin/emailauth.pm:61
+msgid "Invalid email address."
+msgstr "无效的电子邮件地址"
+
+#: ../IkiWiki/Plugin/emailauth.pm:98 ../IkiWiki/Plugin/passwordauth.pm:380
+msgid "Failed to send mail"
+msgstr "无法发送邮件"
+
+#: ../IkiWiki/Plugin/emailauth.pm:100
+msgid ""
+"You have been sent an email, with a link you can open to complete the login "
+"process."
+msgstr "身份验证邮件已发送，请点击邮件正文中的链接来登录"
+
+#: ../IkiWiki/Plugin/emailauth.pm:117
+msgid ""
+"Wrong login token length. Please check that you pasted in the complete login "
+"link from the email!"
+msgstr ""
+
+#: ../IkiWiki/Plugin/format.pm:30
+msgid "must specify format and text"
+msgstr "你必须指定 format 和 text"
+
+#: ../IkiWiki/Plugin/fortune.pm:28
+msgid "fortune failed"
+msgstr "fortune 运行失败"
+
+#: ../IkiWiki/Plugin/getsource.pm:64 ../IkiWiki/Plugin/goto.pm:59
+msgid "missing page"
+msgstr "缺失页面"
+
+#: ../IkiWiki/Plugin/getsource.pm:66 ../IkiWiki/Plugin/goto.pm:61
+#, perl-format
+msgid "The page %s does not exist."
+msgstr "页面 %s 不存在"
+
+#: ../IkiWiki/Plugin/getsource.pm:75
+msgid "not a page"
+msgstr "这个不是一个页面"
+
+#: ../IkiWiki/Plugin/getsource.pm:77
+#, perl-format
+msgid "%s is an attachment, not a page."
+msgstr "%s 是附件，不是页面。"
+
+#: ../IkiWiki/Plugin/git.pm:933 ../IkiWiki/Plugin/git.pm:997 ../IkiWiki.pm:1896
+#, perl-format
+msgid "you are not allowed to change %s"
+msgstr "不允许你更改 %s"
+
+#: ../IkiWiki/Plugin/git.pm:955
+#, perl-format
+msgid "you cannot act on a file with mode %s"
+msgstr "你不能操作模式为 %s 的文件"
+
+#: ../IkiWiki/Plugin/git.pm:959
+msgid "you are not allowed to change file modes"
+msgstr "不允许你改变文件模式"
+
+#: ../IkiWiki/Plugin/git.pm:1033
+msgid "you are not allowed to revert a merge"
+msgstr "不允许撤销一个合并"
+
+#: ../IkiWiki/Plugin/git.pm:1085 ../IkiWiki/Plugin/git.pm:1104
+#, perl-format
+msgid "Failed to revert commit %s"
+msgstr "撤销提交 %s 失败"
+
+#: ../IkiWiki/Plugin/google.pm:26 ../IkiWiki/Plugin/search.pm:48
+#, perl-format
+msgid "Must specify %s when using the %s plugin"
+msgstr "必须指明 %s (在用插件 %s 之前)"
+
+#: ../IkiWiki/Plugin/graphviz.pm:87
+msgid "failed to run graphviz"
+msgstr "无法运行 graphviz"
+
+#: ../IkiWiki/Plugin/graphviz.pm:144
+msgid "prog not a valid graphviz program"
+msgstr "prog 不是一个有效的 graphviz 程序"
+
+#: ../IkiWiki/Plugin/highlight.pm:91
+#, perl-format
+msgid "tohighlight contains unknown file type '%s'"
+msgstr "tohighlight 包含未知文件类型 '%s'"
+
+#: ../IkiWiki/Plugin/highlight.pm:102
+#, perl-format
+msgid "Source code: %s"
+msgstr "源代码： %s"
+
+#: ../IkiWiki/Plugin/highlight.pm:198
+msgid ""
+"warning: highlight perl module not available; falling back to pass through"
+msgstr ""
+
+#: ../IkiWiki/Plugin/htmltidy.pm:65
+msgid "htmltidy failed to parse this html"
+msgstr "htmltidy 无法解析此 html"
+
+#: ../IkiWiki/Plugin/img.pm:96
+msgid "Unable to detect image type from extension"
+msgstr "无法从扩展名中检测文件类型"
+
+#: ../IkiWiki/Plugin/img.pm:104 ../IkiWiki/Plugin/img.pm:143
+#: ../IkiWiki/Plugin/img.pm:182 ../IkiWiki/Plugin/img.pm:230
+#, perl-format
+msgid "failed to read %s: %s"
+msgstr "无法读取 %s: %s"
+
+#: ../IkiWiki/Plugin/img.pm:134
+#, perl-format
+msgid "failed to determine format of %s"
+msgstr "无法确定 %s 的格式"
+
+#: ../IkiWiki/Plugin/img.pm:138
+#, perl-format
+msgid "%s image processing disabled in img_allowed_formats configuration"
+msgstr "%s 文件已经被 img_allowed_formats 选项禁用"
+
+#: ../IkiWiki/Plugin/img.pm:145
+#, perl-format
+msgid "\"%s\" does not seem to be a valid %s file"
+msgstr "\"%s\" 不像一个有效的 %s 文件"
+
+#: ../IkiWiki/Plugin/img.pm:179
+msgid "Image::Magick is not installed"
+msgstr "Image::Magick 模块未安装"
+
+#: ../IkiWiki/Plugin/img.pm:191
+#, perl-format
+msgid "failed to get dimensions of %s"
+msgstr "无法获取 dimensions of %s"
+
+#: ../IkiWiki/Plugin/img.pm:198
+#, perl-format
+msgid "wrong size format \"%s\" (should be WxH)"
+msgstr "错误的 size 格式 \"%s\" (应该是 WxH)"
+
+#: ../IkiWiki/Plugin/img.pm:234
+#, perl-format
+msgid "failed to resize: %s"
+msgstr "无法对 %s 进行缩放"
+
+#: ../IkiWiki/Plugin/img.pm:259
+#, perl-format
+msgid "failed to determine size of image %s"
+msgstr "无法确定文件 %s 的大小"
+
+#: ../IkiWiki/Plugin/inline.pm:93
+msgid "Must specify url to wiki with --url when using --rss or --atom"
+msgstr "使用 --rss 或者 --atom 时，必须使用 --url 指定一个 url 地址给 wiki"
+
+#: ../IkiWiki/Plugin/inline.pm:125
+msgid "please enter a page title"
+msgstr "请输入页标题"
+
+#: ../IkiWiki/Plugin/inline.pm:142
+msgid "page editing not allowed"
+msgstr "不允许编辑页面"
+
+#: ../IkiWiki/Plugin/inline.pm:159
+msgid "missing pages parameter"
+msgstr "页面参数丢失"
+
+#: ../IkiWiki/Plugin/inline.pm:231
+#, perl-format
+msgid "the %s and %s parameters cannot be used together"
+msgstr "%s 和 %s 两个参数不能同时使用"
+
+#: ../IkiWiki/Plugin/inline.pm:337
+#, perl-format
+msgid "%s (RSS feed)"
+msgstr ""
+
+#: ../IkiWiki/Plugin/inline.pm:341
+#, perl-format
+msgid "%s (Atom feed)"
+msgstr ""
+
+#: ../IkiWiki/Plugin/inline.pm:374
+msgid "Add a new post titled:"
+msgstr "创建一个新 post, 标题为："
+
+#: ../IkiWiki/Plugin/inline.pm:415 ../IkiWiki/Plugin/template.pm:46
+#, perl-format
+msgid "failed to process template %s"
+msgstr "无法处理模板： %s"
+
+#: ../IkiWiki/Plugin/inline.pm:755
+msgid "RPC::XML::Client not found, not pinging"
+msgstr ""
+
+#: ../IkiWiki/Plugin/linkmap.pm:94 ../IkiWiki/Plugin/linkmap.pm:101
+#: ../IkiWiki/Plugin/linkmap.pm:105 ../IkiWiki/Plugin/linkmap.pm:108
+msgid "failed to run dot"
+msgstr "无法运行 dot 命令"
+
+#: ../IkiWiki/Plugin/linkmap.pm:98
+msgid "linkmap"
+msgstr "链接网络"
+
+#: ../IkiWiki/Plugin/lockedit.pm:49
+#, perl-format
+msgid "%s is locked and cannot be edited"
+msgstr "%s 已经锁定，无法编辑"
+
+#: ../IkiWiki/Plugin/loginselector.pm:95
+msgid "Other"
+msgstr "其他"
+
+#: ../IkiWiki/Plugin/loginselector.pm:106
+msgid "Password"
+msgstr "密码"
+
+#: ../IkiWiki/Plugin/mdwn.pm:74
+msgid "multimarkdown is enabled, but Text::MultiMarkdown is not installed"
+msgstr "multimarkdown 已经激活，但 Text::MultiMarkdown 模块没有安装"
+
+#: ../IkiWiki/Plugin/mdwn.pm:180
+#, perl-format
+msgid "failed to load Markdown.pm perl module (%s) or /usr/bin/markdown (%s)"
+msgstr "无法加载 Markdown.pm perl 模块 (%s) 或者 /usr/bin/markdown (%s)"
+
+#: ../IkiWiki/Plugin/meta.pm:127
+msgid "enclosure not found"
+msgstr "enclosure 没有找到"
+
+#: ../IkiWiki/Plugin/meta.pm:187
+msgid "stylesheet not found"
+msgstr "stylesheet 没有找到"
+
+#: ../IkiWiki/Plugin/meta.pm:199
+msgid "script not found"
+msgstr "script 没有找到"
+
+#: ../IkiWiki/Plugin/meta.pm:247
+msgid "redir page not found"
+msgstr "redir 页面没有找到"
+
+#: ../IkiWiki/Plugin/meta.pm:261
+msgid "redir cycle is not allowed"
+msgstr "redir cycel 不允许"
+
+#: ../IkiWiki/Plugin/meta.pm:451
+msgid "sort=meta requires a parameter"
+msgstr "sort=meta 要求有一个参数"
+
+#: ../IkiWiki/Plugin/mirrorlist.pm:57
+msgid "Mirrors"
+msgstr "镜像"
+
+#: ../IkiWiki/Plugin/mirrorlist.pm:57
+msgid "Mirror"
+msgstr "镜像"
+
+#: ../IkiWiki/Plugin/moderatedcomments.pm:57
+msgid "comment needs moderation"
+msgstr "评论需要审核"
+
+#: ../IkiWiki/Plugin/more.pm:8
+msgid "more"
+msgstr "更多"
+
+#: ../IkiWiki/Plugin/notifyemail.pm:72
+msgid "Cannot subscribe your email address without logging in."
+msgstr "没有登录无法订阅你的邮件地址"
+
+#: ../IkiWiki/Plugin/notifyemail.pm:136
+msgid "change notification:"
+msgstr "改变通知提醒："
+
+#: ../IkiWiki/Plugin/notifyemail.pm:138
+msgid "comment notification:"
+msgstr "评论通知提醒："
+
+#: ../IkiWiki/Plugin/orphans.pm:56
+msgid "All pages have other pages linking to them."
+msgstr "有其他页面链接到自身的所有页面"
+
+#: ../IkiWiki/Plugin/pagetemplate.pm:30
+msgid "bad or missing template"
+msgstr "缺失模板或者模板损坏"
+
+#: ../IkiWiki/Plugin/passwordauth.pm:145 ../IkiWiki/Plugin/passwordauth.pm:347
+msgid "Error creating account."
+msgstr "创建帐号错误"
+
+#: ../IkiWiki/Plugin/passwordauth.pm:303
+msgid "Your user page: "
+msgstr "你的个人页面："
+
+#: ../IkiWiki/Plugin/passwordauth.pm:310
+msgid "Create your user page"
+msgstr "创建你的个人页面"
+
+#: ../IkiWiki/Plugin/passwordauth.pm:344
+msgid "Account creation successful. Now you can Login."
+msgstr "帐号创建成功，现在可以登录了。"
+
+#: ../IkiWiki/Plugin/passwordauth.pm:353
+msgid "No email address, so cannot email password reset instructions."
+msgstr "没有输入电子邮件地址，所以无法使用电子邮件来重置密码。"
+
+#: ../IkiWiki/Plugin/passwordauth.pm:382
+msgid "You have been mailed password reset instructions."
+msgstr "密码重置邮件已经发送。"
+
+#: ../IkiWiki/Plugin/passwordauth.pm:418
+msgid "incorrect password reset url"
+msgstr "错误的密码重置网网页地址"
+
+#: ../IkiWiki/Plugin/passwordauth.pm:421
+msgid "password reset denied"
+msgstr "密码重置被拒绝"
+
+#: ../IkiWiki/Plugin/passwordauth.pm:434
+msgid "incorrect url"
+msgstr "url 地址不正确"
+
+#: ../IkiWiki/Plugin/passwordauth.pm:437
+msgid "access denied"
+msgstr "拒绝访问"
+
+#: ../IkiWiki/Plugin/pingee.pm:30
+msgid "Ping received."
+msgstr "收到 ping 报文"
+
+#: ../IkiWiki/Plugin/pinger.pm:54
+msgid "requires 'from' and 'to' parameters"
+msgstr "需要 'from' 和 'to' 两个参数"
+
+#: ../IkiWiki/Plugin/pinger.pm:59
+#, perl-format
+msgid "Will ping %s"
+msgstr "要 ping %s"
+
+#: ../IkiWiki/Plugin/pinger.pm:62
+#, perl-format
+msgid "Ignoring ping directive for wiki %s (this wiki is %s)"
+msgstr "正在忽略 wiki %s 的 ping directive (这个 wiki 是 %s)"
+
+#: ../IkiWiki/Plugin/pinger.pm:80
+msgid "LWP not found, not pinging"
+msgstr "LWP 没有找到，放弃 ping"
+
+#: ../IkiWiki/Plugin/po.pm:15
+msgid "warning: Old po4a detected! Recommend upgrade to 0.35."
+msgstr "警告：检测到 po4a 老版本！建议升级到 0.35 版本以上。"
+
+#: ../IkiWiki/Plugin/po.pm:179
+#, perl-format
+msgid "%s is not a valid language code"
+msgstr "%s 不是有效的语言代号"
+
+#: ../IkiWiki/Plugin/po.pm:191
+#, perl-format
+msgid ""
+"%s is not a valid value for po_link_to, falling back to po_link_to=default"
+msgstr ""
+
+#: ../IkiWiki/Plugin/po.pm:196
+msgid ""
+"po_link_to=negotiated requires usedirs to be enabled, falling back to "
+"po_link_to=default"
+msgstr ""
+
+#: ../IkiWiki/Plugin/po.pm:473
+msgid "updated PO files"
+msgstr "更新所有 PO 文件"
+
+#: ../IkiWiki/Plugin/po.pm:496
+msgid ""
+"Can not remove a translation. If the master page is removed, however, its "
+"translations will be removed as well."
+msgstr ""
+
+#: ../IkiWiki/Plugin/po.pm:516
+msgid ""
+"Can not rename a translation. If the master page is renamed, however, its "
+"translations will be renamed as well."
+msgstr ""
+
+#: ../IkiWiki/Plugin/po.pm:975
+#, perl-format
+msgid "POT file (%s) does not exist"
+msgstr ""
+
+#: ../IkiWiki/Plugin/po.pm:989
+#, perl-format
+msgid "failed to copy underlay PO file to %s"
+msgstr "无法将 underlay PO 文件拷贝到 %s"
+
+#: ../IkiWiki/Plugin/po.pm:997
+#, perl-format
+msgid "failed to update %s"
+msgstr "无法更新 %s"
+
+#: ../IkiWiki/Plugin/po.pm:1003
+#, perl-format
+msgid "failed to copy the POT file to %s"
+msgstr "无法拷贝 POT 文件到 %s"
+
+#: ../IkiWiki/Plugin/po.pm:1039
+msgid "N/A"
+msgstr ""
+
+#: ../IkiWiki/Plugin/po.pm:1050
+#, perl-format
+msgid "failed to translate %s"
+msgstr "无法翻译 %s"
+
+#: ../IkiWiki/Plugin/po.pm:1133
+msgid "removed obsolete PO files"
+msgstr "删除过期的 PO 文件"
+
+#: ../IkiWiki/Plugin/po.pm:1190 ../IkiWiki/Plugin/po.pm:1202
+#: ../IkiWiki/Plugin/po.pm:1241
+#, perl-format
+msgid "failed to write %s"
+msgstr ""
+
+#: ../IkiWiki/Plugin/po.pm:1200
+msgid "failed to translate"
+msgstr "无法翻译"
+
+#: ../IkiWiki/Plugin/po.pm:1253
+msgid "invalid gettext data, go back to previous page to continue edit"
+msgstr "发现不合法的 gettext 数据，请返回到上一页继续编辑"
+
+#: ../IkiWiki/Plugin/po.pm:1296
+#, perl-format
+msgid "%s has invalid syntax: must use CODE|NAME"
+msgstr "%s 语法不合法：必须是 CODE|NAME"
+
+#: ../IkiWiki/Plugin/poll.pm:72 ../IkiWiki/Plugin/poll.pm:87
+msgid "vote"
+msgstr "投票"
+
+#: ../IkiWiki/Plugin/poll.pm:86
+msgid "Write in"
+msgstr ""
+
+#: ../IkiWiki/Plugin/poll.pm:93
+msgid "Total votes:"
+msgstr "总票数"
+
+#: ../IkiWiki/Plugin/polygen.pm:43
+msgid "polygen not installed"
+msgstr "polygen 程序没有安装"
+
+#: ../IkiWiki/Plugin/polygen.pm:62
+msgid "command failed"
+msgstr "命令失败"
+
+#: ../IkiWiki/Plugin/postsparkline.pm:47
+msgid "missing formula"
+msgstr ""
+
+#: ../IkiWiki/Plugin/postsparkline.pm:54
+msgid "unknown formula"
+msgstr ""
+
+#. translators: These descriptions of times of day are used
+#. translators: in messages like "last edited <description>".
+#. translators: %A is the name of the day of the week, while
+#. translators: %A- is the name of the previous day.
+#: ../IkiWiki/Plugin/prettydate.pm:15
+msgid "late %A- night"
+msgstr ""
+
+#: ../IkiWiki/Plugin/prettydate.pm:17
+msgid "in the wee hours of %A- night"
+msgstr ""
+
+#: ../IkiWiki/Plugin/prettydate.pm:20
+msgid "terribly early %A morning"
+msgstr ""
+
+#: ../IkiWiki/Plugin/prettydate.pm:22
+msgid "early %A morning"
+msgstr ""
+
+#: ../IkiWiki/Plugin/prettydate.pm:25
+msgid "mid-morning %A"
+msgstr ""
+
+#: ../IkiWiki/Plugin/prettydate.pm:26
+msgid "late %A morning"
+msgstr ""
+
+#: ../IkiWiki/Plugin/prettydate.pm:27
+msgid "at lunch time on %A"
+msgstr ""
+
+#: ../IkiWiki/Plugin/prettydate.pm:29
+msgid "%A afternoon"
+msgstr ""
+
+#: ../IkiWiki/Plugin/prettydate.pm:32
+msgid "late %A afternoon"
+msgstr ""
+
+#: ../IkiWiki/Plugin/prettydate.pm:33
+msgid "%A evening"
+msgstr ""
+
+#: ../IkiWiki/Plugin/prettydate.pm:35
+msgid "late %A evening"
+msgstr ""
+
+#: ../IkiWiki/Plugin/prettydate.pm:37
+msgid "%A night"
+msgstr ""
+
+#: ../IkiWiki/Plugin/prettydate.pm:101
+msgid "at teatime on %A"
+msgstr ""
+
+#: ../IkiWiki/Plugin/prettydate.pm:105
+msgid "at midnight"
+msgstr ""
+
+#: ../IkiWiki/Plugin/prettydate.pm:108
+msgid "at noon on %A"
+msgstr ""
+
+#: ../IkiWiki/Plugin/progress.pm:35
+#, perl-format
+msgid "illegal percent value %s"
+msgstr "无效的百分数 %s"
+
+#: ../IkiWiki/Plugin/progress.pm:56
+msgid "need either `percent` or `totalpages` and `donepages` parameters"
+msgstr "需要 `percent` 参数或者 `totalpages` 参数, 并且同时需要 `donepages` 参数"
+
+#: ../IkiWiki/Plugin/recentchanges.pm:106
+#, perl-format
+msgid "This reverts commit %s"
+msgstr "这个用于撤销提交 %s"
+
+#: ../IkiWiki/Plugin/recentchanges.pm:125
+#, perl-format
+msgid "confirm reversion of %s"
+msgstr "确定撤销 %s"
+
+#: ../IkiWiki/Plugin/recentchangesdiff.pm:49
+msgid "(Diff truncated)"
+msgstr "(Diff 折叠)"
+
+#: ../IkiWiki/Plugin/remove.pm:40 ../IkiWiki/Plugin/rename.pm:37
+#, perl-format
+msgid "%s does not exist"
+msgstr "%s 不存在"
+
+#: ../IkiWiki/Plugin/remove.pm:57
+#, perl-format
+msgid "%s is not in the srcdir, so it cannot be deleted"
+msgstr "%s 不在  srcdir 目录里, 所以无法删除"
+
+#: ../IkiWiki/Plugin/remove.pm:60 ../IkiWiki/Plugin/rename.pm:46
+#, perl-format
+msgid "%s is not a file"
+msgstr "%s 不是一个文件"
+
+#: ../IkiWiki/Plugin/remove.pm:167
+#, perl-format
+msgid "confirm removal of %s"
+msgstr "确定删除 %s"
+
+#: ../IkiWiki/Plugin/remove.pm:206
+msgid "Please select the attachments to remove."
+msgstr "请选择需要删除的附件"
+
+#: ../IkiWiki/Plugin/remove.pm:267
+msgid "removed"
+msgstr "删除完成"
+
+#: ../IkiWiki/Plugin/rename.pm:43
+#, perl-format
+msgid "%s is not in the srcdir, so it cannot be renamed"
+msgstr "%s 不在 srcdir 目录之内，所以无法重命名"
+
+#: ../IkiWiki/Plugin/rename.pm:63
+msgid "no change to the file name was specified"
+msgstr ""
+
+#: ../IkiWiki/Plugin/rename.pm:68
+#, perl-format
+msgid "illegal name"
+msgstr "不合法的名称"
+
+#: ../IkiWiki/Plugin/rename.pm:73
+#, perl-format
+msgid "%s already exists"
+msgstr "%s 已经存在"
+
+#: ../IkiWiki/Plugin/rename.pm:79
+#, perl-format
+msgid "%s already exists on disk"
+msgstr "%s 已经在硬盘中存在"
+
+#: ../IkiWiki/Plugin/rename.pm:123
+#, perl-format
+msgid "rename %s"
+msgstr "重命名 %s"
+
+#: ../IkiWiki/Plugin/rename.pm:165
+msgid "Also rename SubPages and attachments"
+msgstr "同时重命名子页面和附件"
+
+#: ../IkiWiki/Plugin/rename.pm:267
+msgid "Only one attachment can be renamed at a time."
+msgstr "一次只能对一个附件重命名"
+
+#: ../IkiWiki/Plugin/rename.pm:270
+msgid "Please select the attachment to rename."
+msgstr "请选择需要重命名的附件"
+
+#: ../IkiWiki/Plugin/rename.pm:380
+#, perl-format
+msgid "rename %s to %s"
+msgstr "将 %s 更名为 %s"
+
+#: ../IkiWiki/Plugin/rename.pm:606
+#, perl-format
+msgid "update for rename of %s to %s"
+msgstr ""
+
+#: ../IkiWiki/Plugin/rsync.pm:37
+#, perl-format
+msgid "failed to execute rsync_command: %s"
+msgstr "无法执行 rsync 命令：%s"
+
+#: ../IkiWiki/Plugin/rsync.pm:40
+#, perl-format
+msgid "rsync_command exited %d"
+msgstr "rsync_command 退出 %s"
+
+#: ../IkiWiki/Plugin/search.pm:216
+#, perl-format
+msgid "need Digest::SHA to index %s"
+msgstr "索引 %s 需要安装 Digest::SHA 模块"
+
+#: ../IkiWiki/Plugin/search.pm:270
+msgid "search"
+msgstr "搜索"
+
+#: ../IkiWiki/Plugin/shortcut.pm:32
+#, perl-format
+msgid "shortcut plugin will not work without %s"
+msgstr "没有 %s, shortcut 插件无法工作"
+
+#: ../IkiWiki/Plugin/shortcut.pm:45
+msgid "missing name or url parameter"
+msgstr "缺少 name 或者 url 参数"
+
+#. translators: This is used to display what shortcuts are defined.
+#. translators: First parameter is the name of the shortcut, the second
+#. translators: is an URL.
+#: ../IkiWiki/Plugin/shortcut.pm:55
+#, perl-format
+msgid "shortcut %s points to <i>%s</i>"
+msgstr ""
+
+#: ../IkiWiki/Plugin/smiley.pm:30
+#, perl-format
+msgid "smiley plugin will not work without %s"
+msgstr "没有 %s , 表情插件无法工作"
+
+#: ../IkiWiki/Plugin/smiley.pm:50
+msgid "failed to parse any smileys"
+msgstr "无法解析任何表情"
+
+#: ../IkiWiki/Plugin/sparkline.pm:73
+msgid "parse error"
+msgstr "解析错误"
+
+#: ../IkiWiki/Plugin/sparkline.pm:79
+msgid "invalid featurepoint diameter"
+msgstr ""
+
+#: ../IkiWiki/Plugin/sparkline.pm:89
+msgid "invalid featurepoint location"
+msgstr ""
+
+#: ../IkiWiki/Plugin/sparkline.pm:100
+msgid "missing values"
+msgstr ""
+
+#: ../IkiWiki/Plugin/sparkline.pm:105
+msgid "invalid height value"
+msgstr ""
+
+#: ../IkiWiki/Plugin/sparkline.pm:112
+msgid "missing width parameter"
+msgstr ""
+
+#: ../IkiWiki/Plugin/sparkline.pm:116
+msgid "invalid width value"
+msgstr ""
+
+#: ../IkiWiki/Plugin/sparkline.pm:154
+msgid "failed to run php"
+msgstr ""
+
+#: ../IkiWiki/Plugin/table.pm:32
+msgid "cannot find file"
+msgstr ""
+
+#: ../IkiWiki/Plugin/table.pm:88
+msgid "unknown data format"
+msgstr ""
+
+#: ../IkiWiki/Plugin/table.pm:96
+msgid "empty data"
+msgstr ""
+
+#: ../IkiWiki/Plugin/table.pm:115
+msgid "Direct data download"
+msgstr ""
+
+#: ../IkiWiki/Plugin/table.pm:149
+#, perl-format
+msgid "parse fail at line %d: %s"
+msgstr "在 %d: %s 行处解析错误"
+
+#: ../IkiWiki/Plugin/tag.pm:114
+#, perl-format
+msgid "creating tag page %s"
+msgstr "创建 tag 标签页面"
+
+#: ../IkiWiki/Plugin/template.pm:33
+msgid "missing id parameter"
+msgstr "缺少 id 参数"
+
+#: ../IkiWiki/Plugin/templatebody.pm:42
+msgid "first parameter must be the content"
+msgstr ""
+
+#: ../IkiWiki/Plugin/teximg.pm:73
+msgid "missing tex code"
+msgstr "缺少 tex 代码"
+
+#: ../IkiWiki/Plugin/teximg.pm:125
+msgid "failed to generate image from code"
+msgstr "无法从代码重生成图像"
+
+#: ../IkiWiki/Plugin/trail.pm:392
+#, perl-format
+msgid "building %s, its previous or next page has changed"
+msgstr "正在创建 %s 它的前一页或者后一页已经改变"
+
+#: ../IkiWiki/Plugin/transient.pm:45
+#, perl-format
+msgid "removing transient version of %s"
+msgstr ""
+
+#: ../IkiWiki/Plugin/userlist.pm:59
+msgid "login"
+msgstr "登录"
+
+#: ../IkiWiki/Plugin/userlist.pm:59
+msgid "email"
+msgstr "电子邮件"
+
+#: ../IkiWiki/Plugin/userlist.pm:73
+msgid "Users"
+msgstr "用户"
+
+#: ../IkiWiki/Plugin/websetup.pm:105
+#, perl-format
+msgid "%s plugin:"
+msgstr "%s 插件:"
+
+#: ../IkiWiki/Plugin/websetup.pm:121
+#, perl-format
+msgid "%s plugins"
+msgstr "%s 插件"
+
+#: ../IkiWiki/Plugin/websetup.pm:135
+#, perl-format
+msgid "enable %s?"
+msgstr "激活 %s?"
+
+#: ../IkiWiki/Plugin/websetup.pm:276
+msgid "setup file for this wiki is not known"
+msgstr "找不到这个 wiki 的 setup 设置文件"
+
+#: ../IkiWiki/Plugin/websetup.pm:292
+msgid "main"
+msgstr ""
+
+#: ../IkiWiki/Plugin/websetup.pm:436
+msgid ""
+"The configuration changes shown below require a wiki rebuild to take effect."
+msgstr ""
+
+#: ../IkiWiki/Plugin/websetup.pm:440
+msgid ""
+"For the configuration changes shown below to fully take effect, you may need "
+"to rebuild the wiki."
+msgstr ""
+
+#: ../IkiWiki/Plugin/websetup.pm:477
+#, perl-format
+msgid "Error: %s exited nonzero (%s). Discarding setup changes."
+msgstr ""
+
+#: ../IkiWiki/Receive.pm:36
+#, perl-format
+msgid "cannot determine id of untrusted committer %s"
+msgstr "无法确定不可信用户的 id"
+
+#: ../IkiWiki/Render.pm:161
+#, perl-format
+msgid "scanning %s"
+msgstr "正在扫描 %s"
+
+#: ../IkiWiki/Render.pm:284
+#, perl-format
+msgid ""
+"symlink found in srcdir path (%s) -- set allow_symlinks_before_srcdir to "
+"allow this"
+msgstr ""
+
+#: ../IkiWiki/Render.pm:336 ../IkiWiki/Render.pm:397
+#, perl-format
+msgid "skipping bad filename %s"
+msgstr "通过有问题的文件名 %s"
+
+#: ../IkiWiki/Render.pm:353 ../IkiWiki/Render.pm:402
+#, perl-format
+msgid "%s has multiple possible source files; one will be chosen at random"
+msgstr "%s 可能有多个源文件，随机选择一个"
+
+#: ../IkiWiki/Render.pm:439
+#, perl-format
+msgid "querying %s for file creation and modification times.."
+msgstr ""
+
+#: ../IkiWiki/Render.pm:518
+#, perl-format
+msgid "removing obsolete %s"
+msgstr "正在删除过期的 %s"
+
+#: ../IkiWiki/Render.pm:603
+#, perl-format
+msgid "building %s, which links to %s"
+msgstr "正在编译 %s, 它链接到 %s"
+
+#: ../IkiWiki/Render.pm:612
+#, perl-format
+msgid "removing %s, no longer built by %s"
+msgstr "正在删除 %s, 不在被 %s 构建。"
+
+#: ../IkiWiki/Render.pm:695 ../IkiWiki/Render.pm:777
+#, perl-format
+msgid "building %s, which depends on %s"
+msgstr "正在编译 %s, 它依赖 %s"
+
+#: ../IkiWiki/Render.pm:790
+#, perl-format
+msgid "building %s, to update its backlinks"
+msgstr ""
+
+#: ../IkiWiki/Render.pm:902
+#, perl-format
+msgid "building %s"
+msgstr "正在创建 %s"
+
+#: ../IkiWiki/Render.pm:971
+#, perl-format
+msgid "ikiwiki: cannot build %s"
+msgstr "ikiwiki: 无法创建 %s"
+
+#. translators: The first parameter is a filename, and the second
+#. translators: is a (probably not translated) error message.
+#: ../IkiWiki/Setup.pm:23
+#, perl-format
+msgid "cannot read %s: %s"
+msgstr "无法读取 %s: %s"
+
+#: ../IkiWiki/Setup.pm:34
+#, perl-format
+msgid "cannot load %s in safe mode"
+msgstr "使用安全模式无法加载 %s"
+
+#: ../IkiWiki/Setup.pm:47
+#, perl-format
+msgid "failed to parse %s"
+msgstr "无法解析 %s"
+
+#: ../IkiWiki/Setup/Automator.pm:34
+msgid "you must enter a wikiname (that contains alphanumerics)"
+msgstr "你必须输入一个 wiki 名字(只包含数字和字母)"
+
+#: ../IkiWiki/Setup/Automator.pm:89
+#, perl-format
+msgid "unsupported revision control system %s"
+msgstr "版本控制系统 %s 不支持"
+
+#: ../IkiWiki/Setup/Automator.pm:115
+msgid "failed to set up the repository with ikiwiki-makerepo"
+msgstr "无法使用 ikiwiki-makerepo 来设置 wiki 仓库"
+
+#: ../IkiWiki/Setup/Automator.pm:134
+#, perl-format
+msgid "** Disabling plugin %s, since it is failing with this message:"
+msgstr "** 正在禁用 plugin %s, 因为："
+
+#: ../IkiWiki/Wrapper.pm:12
+msgid "generating wrappers.."
+msgstr "正在生成 wrappers "
+
+#: ../IkiWiki/Wrapper.pm:37
+#, perl-format
+msgid "%s doesn't seem to be executable"
+msgstr "%s 似乎不可执行"
+
+#: ../IkiWiki/Wrapper.pm:41
+msgid "cannot create a wrapper that uses a setup file"
+msgstr "无法使用一个 setup 配置文件来生成 wrapper"
+
+#: ../IkiWiki/Wrapper.pm:45
+msgid "wrapper filename not specified"
+msgstr "wrapper 的文件名没有指定"
+
+#: ../IkiWiki/Wrapper.pm:122
+msgid "Please wait"
+msgstr "请等待"
+
+#. translators: The parameter is a C filename.
+#: ../IkiWiki/Wrapper.pm:303
+#, perl-format
+msgid "failed to compile %s"
+msgstr "编译 %s 失败"
+
+#. translators: The parameter is a filename.
+#: ../IkiWiki/Wrapper.pm:323
+#, perl-format
+msgid "successfully generated %s"
+msgstr "成功生成 %s"
+
+#: ../ikiwiki.in:11
+msgid "usage: ikiwiki [options] source dest"
+msgstr ""
+
+#: ../ikiwiki.in:12
+msgid "       ikiwiki --setup my.setup [options]"
+msgstr ""
+
+#: ../ikiwiki.in:103
+msgid "usage: --set var=value"
+msgstr ""
+
+#: ../ikiwiki.in:110
+msgid "usage: --set-yaml var=value"
+msgstr ""
+
+#: ../ikiwiki.in:215
+msgid "rebuilding wiki.."
+msgstr "正在重新创建 wiki ..."
+
+#: ../ikiwiki.in:218
+msgid "refreshing wiki.."
+msgstr "正在刷新 wiki ..."
+
+#: ../IkiWiki.pm:270
+msgid "Discussion"
+msgstr "讨论"
+
+#: ../IkiWiki.pm:656
+msgid "Must specify url to wiki with --url when using --cgi"
+msgstr "当使用 --cgi 参数时，必须使用 --url 来指定 wiki 的 url 地址"
+
+#: ../IkiWiki.pm:731
+#, perl-format
+msgid "unsupported umask setting %s"
+msgstr "不支持的 umask 设置 %s"
+
+#: ../IkiWiki.pm:771
+msgid "cannot use multiple rcs plugins"
+msgstr "无法使用多个 rcs 插件（版本控制插件）"
+
+#: ../IkiWiki.pm:801
+#, perl-format
+msgid "failed to load external plugin needed for %s plugin: %s"
+msgstr ""
+
+#: ../IkiWiki.pm:1652
+#, perl-format
+msgid "preprocessing loop detected on %s at depth %i"
+msgstr ""
+
+#: ../IkiWiki.pm:1852
+#, perl-format
+msgid "bad file name %s"
+msgstr "错误的文件名 %s"
+
+#: ../IkiWiki.pm:2165
+#, perl-format
+msgid "template %s not found"
+msgstr "模板 %s 没有找到"
+
+#: ../IkiWiki.pm:2423
+msgid "yes"
+msgstr "是"
+
+#: ../IkiWiki.pm:2508
+#, perl-format
+msgid "invalid sort type %s"
+msgstr "无效的排序类型 %s"
+
+#: ../IkiWiki.pm:2529
+#, perl-format
+msgid "unknown sort type %s"
+msgstr "未知的排序类型 %s"
+
+#: ../IkiWiki.pm:2678
+#, perl-format
+msgid "cannot match pages: %s"
+msgstr "无法匹配页面： %s"
+
+#: ../auto.setup:16
+msgid "What will the wiki be named?"
+msgstr "这个 wiki 叫什么名字？"
+
+#: ../auto.setup:16
+msgid "wiki"
+msgstr ""
+
+#: ../auto.setup:19
+msgid "What revision control system to use?"
+msgstr "使用什么版本控制系统？"
+
+#: ../auto.setup:21
+msgid "Which user (wiki account, openid, or email) will be admin?"
+msgstr "哪个用户（wiki 帐户，openid, 或者 email）当管理员？"
+
+#: ../auto.setup:24
+msgid "What is the domain name of the web server?"
+msgstr "网页服务器对应的域名是？"
