@@ -25,19 +25,19 @@
 
 <TMPL_IF ENCLOSURE>
 <TMPL_IF HTML5><section id="inlineenclosure"><TMPL_ELSE><div id="inlineenclosure"></TMPL_IF>
-<a href="<TMPL_VAR ENCLOSURE>">Download</a>
+<a href="<TMPL_VAR ENCLOSURE>">下载</a>
 <TMPL_IF HTML5></section><TMPL_ELSE></div></TMPL_IF>
 </TMPL_IF>
 
 <TMPL_IF HTML5><footer class="inlinefooter"><TMPL_ELSE><div class="inlinefooter"></TMPL_IF>
 
 <span class="pagedate">
-Posted <TMPL_VAR CTIME>
+时间: <TMPL_VAR CTIME>
 </span>
 
 <TMPL_IF TAGS>
 <TMPL_IF HTML5><nav class="tags"><TMPL_ELSE><span class="tags"></TMPL_IF>
-Tags:
+标签:
 <TMPL_LOOP TAGS>
 <TMPL_VAR LINK>
 </TMPL_LOOP>
@@ -60,7 +60,7 @@ License: <TMPL_VAR LICENSE>
 <TMPL_IF HTML5><nav class="actions"><TMPL_ELSE><div class="actions"></TMPL_IF>
 <ul>
 <TMPL_IF EDITURL>
-<li><a href="<TMPL_VAR EDITURL>" rel="nofollow">Edit</a></li>
+<li><a href="<TMPL_VAR EDITURL>" rel="nofollow">编辑</a></li>
 </TMPL_IF>
 <TMPL_IF COMMENTSLINK>
 <li><TMPL_VAR COMMENTSLINK></li>

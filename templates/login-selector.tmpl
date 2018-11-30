@@ -19,7 +19,7 @@ $(document).ready(function() {
 		<script>
 		$('fieldset').append("<legend>Select login method</legend>");
 		</script>
-		
+
 		<input type="hidden" name="do" value="signin" />
 		<input type="hidden" name="action" value="verify" />
 		<div id="login_choice">
@@ -30,7 +30,7 @@ $(document).ready(function() {
 		<TMPL_IF LOGIN_SELECTOR_OPENID>
 			<div>
 				<h3>OpenId login:</h3>
-				<label for="openid_identifier" class="block">Enter your OpenID:</label>
+				<label for="openid_identifier" class="block">请输入 OpenID:</label>
 				<input id="openid_identifier" name="openid_identifier" type="text" value="<TMPL_VAR ESCAPE=HTML OPENID_URL>"/>
 				<input id="openid_submit" type="submit" value="Login"/>
 			</div>
@@ -38,7 +38,7 @@ $(document).ready(function() {
 		<TMPL_IF LOGIN_SELECTOR_EMAILAUTH>
 			<div>
 				<h3>Email login:</h3>
-				<label for="email_address" class="block">Enter your email address:</label>
+				<label for="email_address" class="block">请输入电子邮件:</label>
 				<input id="email_address" name="Email_entry" type="text" value="<TMPL_VAR ESCAPE=HTML EMAIL_ADDRESS>"/>
 				<input id="email_submit" type="submit" value="Login"/>
 			</div>
@@ -58,7 +58,7 @@ $(document).ready(function() {
 <TMPL_IF OTHERFORM>
 <br />
 <noscript>
-<h3><TMPL_VAR OTHERFORM_LABEL> login:</h3>
+<h3><TMPL_VAR OTHERFORM_LABEL> 登录:</h3>
 </noscript>
 </TMPL_IF>
 <TMPL_VAR OTHERFORM>

@@ -21,7 +21,7 @@
 
 <TMPL_UNLESS DYNAMIC>
 <TMPL_IF EDITURL>
-<link rel="alternate" type="application/x-wiki" title="Edit this page" href="<TMPL_VAR EDITURL>" />
+<link rel="alternate" type="application/x-wiki" title="编辑此页面" href="<TMPL_VAR EDITURL>" />
 </TMPL_IF>
 <TMPL_IF FEEDLINKS><TMPL_VAR FEEDLINKS></TMPL_IF>
 <TMPL_IF RELVCS><TMPL_VAR RELVCS></TMPL_IF>
@@ -47,7 +47,7 @@
 <span>
 <span class="parentlinks">
 <TMPL_LOOP PARENTLINKS>
-<a href="<TMPL_VAR URL>"><TMPL_VAR PAGE></a>/ 
+<a href="<TMPL_VAR URL>"><TMPL_VAR PAGE></a>/
 </TMPL_LOOP>
 </span>
 <span class="title">
@@ -68,19 +68,19 @@
 <TMPL_IF HTML5><nav class="actions"><TMPL_ELSE><div class="actions"></TMPL_IF>
 <ul>
 <TMPL_IF EDITURL>
-<li><a href="<TMPL_VAR EDITURL>" rel="nofollow">Edit</a></li>
+<li><a href="<TMPL_VAR EDITURL>" rel="nofollow">编辑</a></li>
 </TMPL_IF>
 <TMPL_IF RECENTCHANGESURL>
-<li><a href="<TMPL_VAR RECENTCHANGESURL>">RecentChanges</a></li>
+<li><a href="<TMPL_VAR RECENTCHANGESURL>">最近更新</a></li>
 </TMPL_IF>
 <TMPL_IF HISTORYURL>
-<li><a rel="nofollow" href="<TMPL_VAR HISTORYURL>">History</a></li>
+<li><a rel="nofollow" href="<TMPL_VAR HISTORYURL>">历史记录</a></li>
 </TMPL_IF>
 <TMPL_IF GETSOURCEURL>
-<li><a rel="nofollow" href="<TMPL_VAR GETSOURCEURL>">Source</a></li>
+<li><a rel="nofollow" href="<TMPL_VAR GETSOURCEURL>">源代码</a></li>
 </TMPL_IF>
 <TMPL_IF PREFSURL>
-<li><a rel="nofollow" href="<TMPL_VAR PREFSURL>">Preferences</a></li>
+<li><a rel="nofollow" href="<TMPL_VAR PREFSURL>">选项</a></li>
 </TMPL_IF>
 <TMPL_IF ACTIONS>
 <TMPL_LOOP ACTIONS>
@@ -137,7 +137,7 @@
 
 <TMPL_IF ENCLOSURE>
 <TMPL_IF HTML5><section id="enclosure"><TMPL_ELSE><div id="enclosure"></TMPL_IF>
-<a href="<TMPL_VAR ENCLOSURE>">Download</a>
+<a href="<TMPL_VAR ENCLOSURE>">下载</a>
 <TMPL_IF HTML5></section><TMPL_ELSE></div></TMPL_IF>
 </TMPL_IF>
 
@@ -147,10 +147,10 @@
 <TMPL_VAR COMMENTS>
 <TMPL_IF ADDCOMMENTURL>
 <div class="addcomment">
-<a rel="nofollow" href="<TMPL_VAR ADDCOMMENTURL>">Add a comment</a>
+<a rel="nofollow" href="<TMPL_VAR ADDCOMMENTURL>">添加一条评论</a>
 </div>
 <TMPL_ELSE>
-<div class="addcomment">Comments on this page are closed.</div>
+<div class="addcomment">此页面的评论已经关闭。</div>
 </TMPL_IF>
 <TMPL_IF HTML5></section><TMPL_ELSE></div></TMPL_IF>
 </TMPL_IF>
@@ -166,7 +166,7 @@
 
 <TMPL_IF TAGS>
 <TMPL_IF HTML5><nav class="tags"><TMPL_ELSE><div class="tags"></TMPL_IF>
-Tags:
+标签:
 <TMPL_LOOP TAGS>
 <TMPL_VAR LINK>
 </TMPL_LOOP>
@@ -175,7 +175,7 @@ Tags:
 
 <TMPL_IF BACKLINKS>
 <TMPL_IF HTML5><nav id="backlinks"><TMPL_ELSE><div id="backlinks"></TMPL_IF>
-Links:
+链接:
 <TMPL_LOOP BACKLINKS>
 <a href="<TMPL_VAR URL>"><TMPL_VAR PAGE></a>
 </TMPL_LOOP>
@@ -206,7 +206,7 @@ License: <TMPL_VAR LICENSE>
 </TMPL_IF>
 
 <div class="pagedate">
-Last edited <TMPL_VAR MTIME>
+最近一次编辑: <TMPL_VAR MTIME>
 <!-- Created <TMPL_VAR CTIME> -->
 </div>
 

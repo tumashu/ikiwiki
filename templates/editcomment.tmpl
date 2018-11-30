@@ -8,22 +8,22 @@
 <TMPL_UNLESS NAME=USERNAME>
 <TMPL_IF NAME=ALLOWAUTHOR>
 <label for="author" class="block">Name:</label>
-<TMPL_VAR NAME=FIELD-AUTHOR> (optional, or <a rel="nofollow" href="<TMPL_VAR SIGNINURL>">signin</a>)
+<TMPL_VAR NAME=FIELD-AUTHOR> (可选项, 或者 <a rel="nofollow" href="<TMPL_VAR SIGNINURL>">登录</a>)
 <br/>
-<label for="url" class="block">Website:</label>
-<TMPL_VAR NAME=FIELD-URL> (optional)
+<label for="url" class="block">网址:</label>
+<TMPL_VAR NAME=FIELD-URL> (可选)
 <br />
-<label for="url" class="block">Email:</label>
+<label for="url" class="block">电子邮件:</label>
 <TMPL_VAR NAME=FIELD-EMAIL> <TMPL_VAR FIELD-ANONSUBSCRIBE>
 <br />
 <TMPL_ELSE>
-(You might want to <a rel="nofollow" href="<TMPL_VAR SIGNINURL>">Signin</a> first?)
+(你首先应该用 <a rel="nofollow" href="<TMPL_VAR SIGNINURL>">登录</a>吧?)
 <br />
 </TMPL_IF>
 </TMPL_UNLESS>
-<label for="subject" class="block">Subject:</label>
+<label for="subject" class="block">主题:</label>
 <TMPL_VAR FIELD-SUBJECT><br />
-<label for="editcontent" class="block">Comment:</label>
+<label for="editcontent" class="block">评论:</label>
 <TMPL_VAR FIELD-EDITCONTENT><br />
 <TMPL_VAR FORM-SUBMIT> <TMPL_VAR FIELD-TYPE> <TMPL_VAR HELPONFORMATTINGLINK>
 <TMPL_VAR FIELD-SUBSCRIBE><br />
@@ -33,7 +33,7 @@
 <TMPL_IF NAME="PAGE_PREVIEW">
 <hr />
 <div class="header">
-<span>Comment preview:</span>
+<span>评论预览:</span>
 </div><!-- .header -->
 <div id="preview">
 <TMPL_VAR PAGE_PREVIEW>

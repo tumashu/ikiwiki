@@ -1,22 +1,22 @@
 <TMPL_IF ERROR>
 <p>
-<b>Failed to rename <TMPL_VAR SRC> to <TMPL_VAR DEST>: </b>
+<b>无法将 <TMPL_VAR SRC> 更名为 <TMPL_VAR DEST>: </b>
 <TMPL_VAR ERROR>
 </p>
 <TMPL_ELSE>
 <p>
-<b>Successfully renamed <TMPL_VAR SRC> to <TMPL_VAR DEST>.</b>
+<b>成功将 <TMPL_VAR SRC> 更名为 <TMPL_VAR DEST>.</b>
 </p>
 <p>
 <TMPL_IF FIXEDLINKS>
-The following pages have been automatically modified to update their links to <TMPL_VAR DEST>:
+下面页面中，链接到 <TMPL_VAR DEST> 的所有链接都自动更新了。
 <ul>
 <TMPL_LOOP FIXEDLINKS><li><TMPL_VAR PAGE></li></TMPL_LOOP>
 </ul>
 </TMPL_IF>
 <TMPL_IF BROKENLINKS_CHECKED>
 <TMPL_IF BROKENLINKS>
-The following pages still link to <TMPL_VAR SRC>:
+下面的页面仍链接到 <TMPL_VAR SRC>:
 <ul>
 <TMPL_LOOP BROKENLINKS><li><TMPL_VAR PAGE></li></TMPL_LOOP>
 </ul>
