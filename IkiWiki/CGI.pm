@@ -44,10 +44,52 @@ sub showform ($$$$;@) {
 	my $buttons=shift;
 	my $session=shift;
 	my $cgi=shift;
+ 
+    my $str=cgitemplate($cgi, $form->title,
+                        $form->render(submit => $buttons), @_);
+
+    my %names = ("Save Page" => "保存页面",
+                 "Preview"   => "预览",
+                 "Cancel"    => "取消",
+                 "Diff"      => "差异比较",
+                 "Rename"    => "重命名",
+                 "Remove"    => "删除",
+                 "Login"     => "登录",
+                 "Register"  => "注册",
+                 "Logout"    => "退出",
+                 "Setup"     => "设置",
+                 "Users"     => "所有用户",
+                 "Name"      => "用户名",
+                 "Password"  => "密码",
+                 "Email"     => "电子邮件",
+                 "Save Preferences"   => "保存选项",
+                 "Confirm Password"   => "再次输入密码",
+                 "Create Account"     => "创建帐户",
+                 "Reset Password"     => "重置密码",
+                 "Insert Links"       => "插入链接",
+                 "Rename Attachment"  => "重命名附件",
+                 "Remove Attachments" => "删除附件",
+                 "FormattingHelp"     => "格式帮助",
+                 "Reset"              => "重置",
+                 "Save Setup"         => "保存设置",
+                 "Advanced Mode"      => "高级模式",
+                 "Account Creation Password" => "请输入帐户创建密码(管理员预设)"
+        );
+
+    foreach my $old_name (keys(%names))
+    {
+        my $new_name = Encode::decode_utf8($names{$old_name});
+        $str =~ s/<input +id="([_A-Za-z0-9]+)" +name="([_A-Za-z0-9]+)" +type="([_A-Za-z0-9]+)" +value="($old_name)" +\/>/<button id="$1" name="$2" type="$3" value="$4">$new_name<\/button>/g;
+        $str =~ s/<input +name="([_A-Za-z0-9]+)" +type="([_A-Za-z0-9]+)" +value="($old_name)" +\/>/<button name="$1" type="$2" value="$3">$new_name<\/button>/g;
+        $str =~ s/<input +class="([_A-Za-z0-9]+)" +id="([_A-Za-z0-9]+)" +name="([_A-Za-z0-9]+)" +type="([_A-Za-z0-9]+)" +value="($old_name)" +\/>/<button class="$1" id="$2" name="$3" type="$4" value="$5">$new_name<\/button>/g;
+        $str =~ s/<div class="([_A-Za-z0-9]+)" id="([_A-Za-z0-9]+)">$old_name<\/div>/<div class="$1" id="$2">$new_name<\/div>/g;
+        $str =~ s/<div class="([_A-Za-z0-9]+)" id="([_A-Za-z0-9]+)"><span class="([_A-Za-z0-9]+)">$old_name<\/span><\/div>/<div class="$1" id="$2"><span class="$3">$new_name<\/span><\/div>/g;
+        $str =~ s/<a href="\.\/ikiwiki\/formatting\/">($old_name)<\/a>/<a href="\.\/ikiwiki\/formatting\/">$new_name<\/a>/g;
+    };
 
 	printheader($session);
-	print cgitemplate($cgi, $form->title,
-		$form->render(submit => $buttons), @_);
+	print $str
+    
 }
 
 sub cgitemplate ($$$;@) {
